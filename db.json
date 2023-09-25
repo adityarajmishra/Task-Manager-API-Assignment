@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": "77df5136-96dc-4c05-8051-66e7e95fb44d",
+      "title": "Task 1",
+      "description": "Description of Task 1",
+      "completed": false,
+      "priority": "high",
+      "createdAt": "2023-09-25T15:41:31.365Z"
+    },
+    {
+      "id": "3226606b-74ab-42aa-b31c-0a95a5ccc55f",
+      "title": "Task 2",
+      "description": "Description of Task 2",
+      "completed": true,
+      "priority": "medium",
+      "createdAt": "2023-09-25T15:42:17.152Z"
+    },
+    {
+      "id": "0347b5c5-7016-4901-9214-f6c86843abb0",
+      "title": "Task 3",
+      "description": "Description of Task 3",
+      "completed": true,
+      "priority": "low",
+      "createdAt": "2023-09-25T15:42:41.534Z"
+    }
+  ]
+}
