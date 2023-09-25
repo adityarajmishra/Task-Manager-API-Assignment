@@ -60,6 +60,7 @@ To get a local copy of this project up and running, follow these steps:
 
    ### Create a New Task
 
+   ```bash
    `curl -X POST http://localhost:3000/api/tasks -H "Content-Type: application/json" -d '{
      "title": "Sample Task",
      "description": "This is a sample task.",
@@ -68,12 +69,18 @@ To get a local copy of this project up and running, follow these steps:
    }'`
 
    ### Retrieve All Tasks
+
+   ```bash
    `curl http://localhost:3000/api/tasks`
 
    ### Retrieve a Specific Task by ID
+
+   ```bash
    `curl http://localhost:3000/api/tasks/your-task-id`
 
    ### Update a Task by ID
+
+   ```bash
    `curl -X PUT http://localhost:3000/api/tasks/your-task-id -H "Content-Type: application/json" -d '{
      "title": "Updated Task",
      "description": "This task has been updated.",
@@ -82,23 +89,31 @@ To get a local copy of this project up and running, follow these steps:
    }'`
 
    ### Delete a Task by ID
+
+   ```bash
    `curl -X DELETE http://localhost:3000/api/tasks/your-task-id`
 
    ### Filter Tasks by Completion Status
+
+   ```bash
    `curl http://localhost:3000/api/tasks?completed=true`
 
    ### Sort Tasks by Creation Date (Ascending)
+
+   ```bash
    `curl http://localhost:3000/api/tasks?sort=asc`
 
    ### Sort Tasks by Creation Date (Descending)
+
+   ```bash
    `curl http://localhost:3000/api/tasks?sort=desc`
 
    ### Retrieve Tasks Based on Priority Level
+
+   ```bash
    `curl http://localhost:3000/api/tasks/priority/medium`
 
    Please refer to the API documentation for more details on available endpoints and request/response formats.
-
-   Contributing
-   ------------
+## Contributing
 
    Contributions are welcome! Feel free to open issues or create pull requests for any improvements or bug fixes.
