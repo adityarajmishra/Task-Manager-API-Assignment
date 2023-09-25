@@ -46,7 +46,7 @@ To get a local copy of this project up and running, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/Task-Manager-API.git
+   git clone https://github.com/adityarajmishra/Task-Manager-API-Assignment.git
    cd Task-Manager-API
    1.  Install project dependencies:
        `npm install`
