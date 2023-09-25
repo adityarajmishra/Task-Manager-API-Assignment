@@ -54,8 +54,7 @@ To get a local copy of this project up and running, follow these steps:
        `npm start`
        The API will be available at `http://localhost:3000`.
 
-   Usage
-   -----
+## Usage
 
    You can interact with the API using tools like `curl` or Postman. Here are some example API requests:
 
