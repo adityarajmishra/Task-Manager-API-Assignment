@@ -35,13 +35,17 @@ const getAllTasks = (req, res) => {
     if (completed === 'true' || completed === 'false') {
         filteredTasks = tasks.filter((task) => task.completed === (completed === 'true'));
     }
-    // Sort by creation date if query parameter 'sort' is provided
+    // Sort by creation date
     const { sort } = req.query;
     if (sort === 'asc') {
-        filteredTasks.sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime());
+        filteredTasks.sort((a, b) => {
+            return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
+        });
     }
     else if (sort === 'desc') {
-        filteredTasks.sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime());
+        filteredTasks.sort((a, b) => {
+            return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
+        });
     }
     res.json(filteredTasks);
 };

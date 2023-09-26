@@ -91,7 +91,7 @@ To get a local copy of this project up and running, follow these steps:
 
    ### Filter Tasks by Completion Status
 
-   `curl http://localhost:3000/api/tasks?completed=true`
+   `curl http://localhost:3000/api/tasks\?completed=true`
 
    ### Sort Tasks by Creation Date (Ascending)
 

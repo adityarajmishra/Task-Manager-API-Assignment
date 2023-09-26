@@ -37,20 +37,21 @@ export const getAllTasks = (req: Request, res: Response): void => {
     filteredTasks = tasks.filter((task) => task.completed === (completed === 'true'));
   }
 
-  // Sort by creation date if query parameter 'sort' is provided
+  // Sort by creation date
   const { sort } = req.query;
+
   if (sort === 'asc') {
+
     filteredTasks.sort((a, b) => {
-      const dateA = new Date(a.createdAt);
-      const dateB = new Date(b.createdAt);
-      return dateA.getTime() - dateB.getTime();
+      return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
     });
+
   } else if (sort === 'desc') {
+
     filteredTasks.sort((a, b) => {
-      const dateA = new Date(a.createdAt);
-      const dateB = new Date(b.createdAt);
-      return dateB.getTime() - dateA.getTime();
+      return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
     });
+
   }
   res.json(filteredTasks);
 };
