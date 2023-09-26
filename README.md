@@ -95,11 +95,11 @@ To get a local copy of this project up and running, follow these steps:
 
    ### Sort Tasks by Creation Date (Ascending)
 
-   `curl http://localhost:3000/api/tasks?sort=asc`
+   `curl http://localhost:3000/api/tasks\?sort=asc`
 
    ### Sort Tasks by Creation Date (Descending)
 
-   `curl http://localhost:3000/api/tasks?sort=desc`
+   `curl http://localhost:3000/api/tasks\?sort=desc`
 
    ### Retrieve Tasks Based on Priority Level
 
